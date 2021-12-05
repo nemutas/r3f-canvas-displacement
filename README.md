@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+# About
+**React Three Fiber**を使用して、Canvasに描いた絵を、3DのパネルにDisplacement Map Textureとして適用します。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://nemutas.github.io/r3f-canvas-displacement/
+![スクリーンショット 2021-12-05 170920](https://user-images.githubusercontent.com/46724121/144739143-61fc55ad-1f95-40ec-bcaf-f29fe1e0f733.png)
 
-## Available Scripts
+# Detail
+Displacement Mapは、黒を0、白を1としてメッシュに凸をつけます。Textureを元にメッシュ形状を変更するため、メッシュは細かく細分化されている必要があります。
 
-In the project directory, you can run:
+* Panelの細分化の調整
+<img src='https://user-images.githubusercontent.com/46724121/144739401-026cac8f-fb4d-4ca4-86c4-eccf4a4e371e.png' width=700 />
 
-### `npm start`
+* ワイヤーフレームと影のオンオフ
+<img src='https://user-images.githubusercontent.com/46724121/144739474-093a91a0-b779-4d55-81d2-9ab963066616.png' width=700 />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* 色と凸の大きさの調整
+<img src='https://user-images.githubusercontent.com/46724121/144739530-abeb765a-2c61-42a0-9e51-eeadc55a639d.png' width=700 />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Canvasのコントロール
+<img src='https://user-images.githubusercontent.com/46724121/144739613-268fc93e-d4f4-4688-a221-fbdcc9c1f9d0.png' height=500 />
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Framework・Libraries
+* CRA（Create React App）
+* TypeScript
+* [React Three Fiber](https://docs.pmnd.rs/home)
+* [leva](https://github.com/pmndrs/leva)
+* [Material UI](https://mui.com/)
+* [emotion/css](https://emotion.sh/docs/@emotion/css)
